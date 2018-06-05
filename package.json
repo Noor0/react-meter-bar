@@ -1,0 +1,50 @@
+{
+  "name": "react-meter-bar",
+  "version": "1.0.0",
+  "description": "A simple react meter component",
+  "author": {
+    "name": "Noor ul haq"
+  },
+  "keywords": [
+    "react",
+    "meter",
+    "bar",
+    "component",
+    "progress-bar",
+    "progress"
+  ],
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build:component": "babel src -d dist --out-dir dist --copy-files",
+    "prepublishOnly": "npm run build:component",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d example/dist",
+    "publish-demo": "npm run build && npm run deploy"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "gh-pages": "^1.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react-hot-loader": "^4.2.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  }
+}

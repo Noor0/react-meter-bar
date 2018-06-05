@@ -1,0 +1,10 @@
+{
+	"plugins": ["react-hot-loader/babel", "transform-class-properties"],
+  "presets": [
+		"stage-3",
+		"react",
+		["env", {
+			"targets": { "chrome": "50", "ie": "11" }
+		}]
+	]
+}
