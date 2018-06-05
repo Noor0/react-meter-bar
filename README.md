@@ -1,7 +1,7 @@
 # react-meter-bar
 
 A simple react meter component with seperators and labels
-
+[Live demo](https://noor0.github.io/react-meter-bar/ "Live demo")
 
 ##### Example #1
 ```
