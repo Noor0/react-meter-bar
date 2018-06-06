@@ -1,6 +1,11 @@
 {
-	"plugins": ["react-hot-loader/babel", "transform-class-properties"],
-  "presets": [
+	"env": {
+		"development": {
+			"plugins": ["react-hot-loader/babel", "transform-class-properties"]
+		}
+	},
+	"plugins": ["transform-class-properties"],
+	"presets": [
 		"stage-3",
 		"react",
 		["env", {

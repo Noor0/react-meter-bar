@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Bar.css';
 
-export default class ProgressBar extends Component {
+export default class Bar extends Component {
 	state = { width: 0 }
 	componentDidMount() {
 		this.setState({ width: this.holder.clientWidth });

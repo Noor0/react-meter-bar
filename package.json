@@ -22,7 +22,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build:component": "babel src -d dist --out-dir dist --copy-files",
+    "build:component": "SET BABEL_ENV=development & babel src -d dist --out-dir dist --copy-files",
     "prepublishOnly": "npm run build:component",
     "build": "webpack --mode production",
     "deploy": "gh-pages -d example/dist",
