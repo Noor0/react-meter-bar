@@ -1,22 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
-const plugins = process.env.NODE_ENV === 'production' ? 
-[
-  new HtmlWebpackPlugin({
-    filename: "index.html",
-    template: 'example/public/index.html'
-  }),
-] :
-[
-  new HtmlWebpackPlugin({
-    filename: "index.html",
-    template: 'example/public/index.html'
-  }),
-  new webpack.NamedModulesPlugin(),
-  new webpack.HotModuleReplacementPlugin(),
-]
-
 module.exports = {
   entry: './example/src/index.js',
 	output: {
@@ -54,5 +38,12 @@ module.exports = {
       }
     ]
   },
-  plugins,
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: "index.html",
+      template: 'example/public/index.html'
+    }),
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+  ],
 }
