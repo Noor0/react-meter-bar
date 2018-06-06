@@ -3,6 +3,15 @@
 A simple react meter component with seperators and labels
 [Live demo](https://noor0.github.io/react-meter-bar/ "Live demo")
 
+##### Installation
+```
+yarn add react-meter-bar
+```
+
+```
+npm install react-meter-bar
+```
+
 ##### Example #1
 ```
 import Bar from 'react-meter-bar';
